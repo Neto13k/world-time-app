@@ -6,14 +6,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('assets/images/mapa-mundi.jpg') center / cover no-repeat;
+  overflow: hidden;
+}
+
+/* ===== Spline Background ===== */
+spline-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 /* ===== Card ===== */
 main {
+  position: relative;
+  z-index: 1;
   width: 90%;
   max-width: 400px;
-  padding: 2.5rem;
+  padding: 1.5rem;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.15);
